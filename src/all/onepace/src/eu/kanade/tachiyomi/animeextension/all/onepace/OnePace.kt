@@ -161,7 +161,7 @@ class OnePace : AnimeHttpSource() {
             }
         }
 
-        return videos.sortedByDescending { qualityValue(it.quality) }
+        return videos
     }
 
     private fun findArcCard(heading: Element): Element? {
