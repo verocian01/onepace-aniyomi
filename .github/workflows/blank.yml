@@ -28,11 +28,11 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Build extension
+            - name: Build extension
         working-directory: anime-extensions
         run: |
-    ./gradlew spotlessApply
-    ./gradlew src:all:onepace:assembleDebug
+          ./gradlew spotlessApply
+          ./gradlew src:all:onepace:assembleDebug
 
       - name: Collect APK
         run: |
