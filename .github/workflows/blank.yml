@@ -30,7 +30,9 @@ jobs:
 
       - name: Build extension
         working-directory: anime-extensions
-        run: ./gradlew src:all:onepace:assembleDebug
+        run: |
+    ./gradlew spotlessApply
+    ./gradlew src:all:onepace:assembleDebug
 
       - name: Collect APK
         run: |
