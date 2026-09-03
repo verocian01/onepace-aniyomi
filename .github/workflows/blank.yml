@@ -28,7 +28,7 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-            - name: Build extension
+      - name: Build extension
         working-directory: anime-extensions
         run: |
           ./gradlew spotlessApply
